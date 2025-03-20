@@ -1,3 +1,28 @@
+// Debugging code to check CSS loading
+console.log('JavaScript file loaded successfully');
+
+// Check if CSS is loaded
+window.addEventListener('load', function() {
+    // Get computed style for body
+    const bodyStyle = window.getComputedStyle(document.body);
+    console.log('Body background color:', bodyStyle.backgroundColor);
+    
+    // Check if CSS variables are working
+    const rusticRedColorTest = document.createElement('div');
+    rusticRedColorTest.style.color = 'var(--rustic-red)';
+    document.body.appendChild(rusticRedColorTest);
+    console.log('Rustic red applied:', window.getComputedStyle(rusticRedColorTest).color);
+    document.body.removeChild(rusticRedColorTest);
+    
+    // Check for specific styles that should be applied
+    const headerEl = document.querySelector('header');
+    console.log('Header styles:', window.getComputedStyle(headerEl));
+    
+    // Log document URL for path debugging
+    console.log('Document URL:', document.URL);
+    console.log('Base URL:', window.location.origin + window.location.pathname);
+});
+
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for anchor links
