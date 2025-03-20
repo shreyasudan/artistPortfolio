@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artist Portfolio</title>
+    <title>Artist Portfolio | Exploring Shapes & Perception</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Space+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,6 +16,7 @@
             <nav>
                 <ul>
                     <li><a href="#work">Work</a></li>
+                    <li><a href="#process">Process</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -27,40 +28,99 @@
         <section id="hero">
             <div class="container">
                 <h2>Exploring Shapes, Depth & Perception</h2>
+                <p class="hero-subtitle">A journey through form, material, and visual experience</p>
+                <div class="hero-cta">
+                    <a href="#work" class="primary-button">View Recent Work</a>
+                </div>
             </div>
         </section>
 
         <section id="work">
             <div class="container">
-                <h2>Recent Work</h2>
+                <div class="section-title-container">
+                    <h2>Recent Work</h2>
+                </div>
                 <div class="gallery">
                     <div class="gallery-item">
                         <div class="artwork">
                             <!-- Placeholder for now -->
                             <div class="placeholder-image"></div>
-                            <h3>Artwork Title 1</h3>
-                            <p>2023 | Medium</p>
+                            <div class="artwork-overlay">
+                                <p>An exploration of geometric forms with emphasis on negative space.</p>
+                            </div>
+                            <h3>Negative Space Series I</h3>
+                            <p>2023 | Mixed Media on Canvas</p>
                         </div>
                     </div>
                     <div class="gallery-item">
                         <div class="artwork">
                             <div class="placeholder-image"></div>
-                            <h3>Artwork Title 2</h3>
-                            <p>2023 | Medium</p>
+                            <div class="artwork-overlay">
+                                <p>Examining the intersections between organic and rigid structural elements.</p>
+                            </div>
+                            <h3>Structural Elements</h3>
+                            <p>2023 | Oil on Wood</p>
                         </div>
                     </div>
                     <div class="gallery-item">
                         <div class="artwork">
                             <div class="placeholder-image"></div>
-                            <h3>Artwork Title 3</h3>
-                            <p>2023 | Medium</p>
+                            <div class="artwork-overlay">
+                                <p>Colors and forms dance in an exploration of light's interaction with depth.</p>
+                            </div>
+                            <h3>Depth & Perception</h3>
+                            <p>2023 | Acrylic and Resin</p>
                         </div>
                     </div>
                     <div class="gallery-item">
                         <div class="artwork">
                             <div class="placeholder-image"></div>
-                            <h3>Artwork Title 4</h3>
-                            <p>2022 | Medium</p>
+                            <div class="artwork-overlay">
+                                <p>A study in abstract landscape forms and shifting perspectives.</p>
+                            </div>
+                            <h3>Abstract Landscape I</h3>
+                            <p>2022 | Mixed Media</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-more-container">
+                    <a href="#" class="view-more-link">View Full Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="process">
+            <div class="container">
+                <div class="section-title-container">
+                    <h2>The Process</h2>
+                </div>
+                <div class="process-content">
+                    <div class="process-text">
+                        <h3>From Concept to Canvas</h3>
+                        <p>My work begins with observation of the intersection between natural and constructed forms. I spend time sketching, collecting materials, and experimenting with compositions before moving to the final medium.</p>
+                        
+                        <blockquote>
+                            "Art is not what you see, but what you make others see."
+                            <cite>— Edgar Degas</cite>
+                        </blockquote>
+                        
+                        <p>Each piece evolves through a process of layering, contemplation, and revision. Sometimes the most powerful elements emerge from unplanned moments or "mistakes" that open new visual possibilities.</p>
+                    </div>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">01</div>
+                            <h4>Inspiration & Research</h4>
+                            <p>Drawing from architectural forms, natural structures, and the interplay of light and shadow</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">02</div>
+                            <h4>Sketching & Planning</h4>
+                            <p>Developing compositions through iterative sketches and material exploration</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">03</div>
+                            <h4>Creation & Evolution</h4>
+                            <p>Building layers and allowing the work to evolve through an intuitive process</p>
                         </div>
                     </div>
                 </div>
@@ -72,20 +132,50 @@
                 <h2>About the Artist</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-                        <p>Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere.</p>
+                        <p>Born in [Location], I have been exploring the boundaries between form, space, and perception for over a decade. My work investigates how shapes create meaning and how viewers interact with visual structures in both two and three dimensions.</p>
+                        
+                        <p>With a background in both fine arts and architecture, my practice bridges disciplinary boundaries to create work that challenges conventional understanding of space and form. Each piece invites viewers to reconsider their relationship with the visual world.</p>
+                        
+                        <p>My work has been exhibited in galleries across [Locations] and is held in several private collections. I currently work from my studio in [City].</p>
                     </div>
+                </div>
+                <div class="exhibitions">
+                    <h3>Selected Exhibitions</h3>
+                    <ul class="exhibition-list">
+                        <li>
+                            <span class="year">2023</span>
+                            <span class="exhibition-title">"Structural Dialogues"</span>
+                            <span class="venue">Modern Art Gallery, City</span>
+                        </li>
+                        <li>
+                            <span class="year">2022</span>
+                            <span class="exhibition-title">"Form & Void"</span>
+                            <span class="venue">Contemporary Art Center, City</span>
+                        </li>
+                        <li>
+                            <span class="year">2021</span>
+                            <span class="exhibition-title">"Spatial Interactions"</span>
+                            <span class="venue">Art Institute, City</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section id="contact">
             <div class="container">
-                <h2>Contact</h2>
-                <p>For inquiries about exhibitions, commissions, or artwork purchases:</p>
-                <p><a href="mailto:artist@example.com">artist@example.com</a></p>
+                <div class="section-title-container">
+                    <h2>Contact</h2>
+                </div>
+                <div class="contact-info">
+                    <p>For inquiries about exhibitions, commissions, or artwork purchases, please get in touch:</p>
+                    <p><a href="mailto:artist@example.com">artist@example.com</a></p>
+                    <p>Studio visits available by appointment in [City].</p>
+                </div>
                 <div class="social-links">
                     <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Artsy</a>
+                    <a href="#" class="social-link">LinkedIn</a>
                 </div>
             </div>
         </section>
@@ -94,6 +184,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Artist Name. All rights reserved.</p>
+            <a href="#" class="back-to-top">Back to top</a>
         </div>
     </footer>
 
