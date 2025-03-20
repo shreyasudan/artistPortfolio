@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Portfolio | Exploring Shapes & Perception</title>
+    <style>
+        /* CSS Variables */
+        :root {
+            --black: #121212;
+            --white: #f8f8f8;
+            --gray-light: #e1e1e1;
+            --gray: #8c8c8c;
+            --gray-dark: #383838;
+            --rustic-red: #a54b4b;
+            --rustic-red-light: #c37171;
+            --rustic-red-dark: #7a3535;
+            --accent-color: #d1b38e;
+        }
+
+        /* Basic styles only */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--black);
+            background-color: var(--white);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Mono', monospace;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--black);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--rustic-red);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header */
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--gray-light);
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        /* Hero section */
+        #hero {
+            padding: 8rem 0 5rem;
+            background-color: var(--gray-light);
+            margin-bottom: 3rem;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .placeholder-image {
+            width: 100%;
+            padding-bottom: 100%;
+            background-color: var(--gray);
+            margin-bottom: 1rem;
+        }
+
+        .gallery-item:nth-child(odd) .placeholder-image {
+            background-color: var(--gray-dark);
+        }
+
+        .gallery-item:nth-child(3n) .placeholder-image {
+            background-color: var(--rustic-red);
+            opacity: 0.8;
+        }
+
+        /* About section */
+        #about {
+            padding: 6rem 0;
+            background-color: var(--gray-dark);
+            color: var(--white);
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 0;
+            background-color: var(--black);
+            color: var(--white);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Space+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Artist Name</h1>
+            <nav>
+                <ul>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Exploring Shapes, Depth & Perception</h2>
+                <p>A journey through form, material, and visual experience</p>
+            </div>
+        </section>
+
+        <section id="work">
+            <div class="container">
+                <h2>Recent Work</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <div class="artwork">
+                            <div class="placeholder-image"></div>
+                            <h3>Negative Space Series I</h3>
+                            <p>2023 | Mixed Media on Canvas</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="artwork">
+                            <div class="placeholder-image"></div>
+                            <h3>Structural Elements</h3>
+                            <p>2023 | Oil on Wood</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="artwork">
+                            <div class="placeholder-image"></div>
+                            <h3>Depth & Perception</h3>
+                            <p>2023 | Acrylic and Resin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About the Artist</h2>
+                <p>Artist bio and information goes here.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>artist@example.com</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Artist Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
